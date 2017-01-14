@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Scenario_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Scenario_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Core class</p>
+<p class="description"><p>Base Scenario class, singleton pattern for easy access to the library's functionality.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2010 TK Studios. (http://www.tkstudios.com)</li>
+				<li><span class="field">license:</span> <a href="http://www.phpscenario.org/license.php">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Scenario---Core.php.html">/Scenario/Core.php</a> (line <span class="field"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a32">32</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Scenario/Scenario.html">Scenario</a></td>
+					<td>
+											Core subclass
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																												<div class="var-title">
+					static <span class="var-type">array</span>
+					<a href="#$_defaultConfig" title="details" class="var-name">$_defaultConfig</a>
+				</div>
+																<div class="var-title">
+					static <span class="var-type"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+					<a href="#$_instance" title="details" class="var-name">$_instance</a>
+				</div>
+																				<div class="var-title">
+					<span class="var-type"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>
+					<a href="#$_adapter" title="details" class="var-name">$_adapter</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_config" title="details" class="var-name">$_config</a>
+				</div>
+																											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																				<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#Complete" title="details" class="method-name">Complete</a>
+											(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$identity</span> = <span class="var-default">null</span>])
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+										<a href="#Experiment" title="details" class="method-name">Experiment</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																																<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+										<a href="#getInstance" title="details" class="method-name">getInstance</a>
+										()
+									</div>
+																																								<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+										<a href="#Identity" title="details" class="method-name">Identity</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#IsControl" title="details" class="method-name">IsControl</a>
+											(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$ident</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#RenderXml" title="details" class="method-name">RenderXml</a>
+											(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$style</span> = <span class="var-default">'html'</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$capture</span> = <span class="var-default">false</span>])
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Treatment.html">Scenario_Treatment</a></span>
+										<a href="#Treatment" title="details" class="method-name">Treatment</a>
+											(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$create</span> = <span class="var-default">true</span>])
+									</div>
+								
+												<div class="method-definition">
+											<span class="method-result">Scenario_Core</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+									</div>
+																								<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+										<a href="#config" title="details" class="method-name">config</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+									</div>
+																								<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>
+										<a href="#getAdapter" title="details" class="method-name">getAdapter</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+										<a href="#getExperiment" title="details" class="method-name">getExperiment</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$experimentname</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getOption" title="details" class="method-name">getOption</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getOptions" title="details" class="method-name">getOptions</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Treatment.html">Scenario_Treatment</a></span>
+										<a href="#getTreatment" title="details" class="method-name">getTreatment</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$experiment</span>, <span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																																								<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+										<a href="#setAdapter" title="details" class="method-name">setAdapter</a>
+											(<span class="var-type"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>&nbsp;<span class="var-name">$adapter</span>)
+									</div>
+																</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_defaultConfig" id="$_defaultConfig"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">array</span>
+			<span class="var-name">$_defaultConfig</span>
+			 = <span class="var-default">array(<br />        'classPrefix' =&gt; 'Experiment_',<br />        // the following are not yet in use, but are assumed to be these values.<br />        'createMissingExperiments' =&gt; true,<br />        'createMissingTreatments' =&gt; true,<br />        'defaultIdentityGenerator' =&gt; 'session',<br />        'defaultExperimentClass' =&gt; 'Scenario_Experiment'<br />    )</span>			(line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the default configuration data, to be selectively overwritten by config method.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_instance" id="$_instance"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+			<span class="var-name">$_instance</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a55">55</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the singleton instance.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_adapter" id="$_adapter"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>
+			<span class="var-name">$_adapter</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a233">233</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Data adapter to handle storage &amp; retrieval of testing data.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_config" id="$_config"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_config</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a226">226</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Configuration data.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodComplete" id="Complete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method Complete</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a211">211</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Marks a treatment as being completed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Complete
+		</span>
+					(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$identity</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+				<span class="var-name">$experiment</span><span class="var-description">: Experiment to complete</span>			</li>
+					<li>
+				<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+				<span class="var-name">$identity</span><span class="var-description">: Identity to complete for given experiment</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodExperiment" id="Experiment"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method Experiment</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a132">132</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the experiment for the specified name.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$experiment&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodExperiment">Experiment</a><span class="src-sym">(</span><span class="src-str">'experimentname'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Experiment object for provided name.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+		<span class="method-name">
+			Experiment
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the experiment to retrieve.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetInstance" id="getInstance"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getInstance</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a63">63</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Accesses the Core singleton instance</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The core instance.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+		<span class="method-name">
+			getInstance
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodIdentity" id="Identity"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method Identity</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a143">143</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Calls and returns default Scenario_Identity object from generator.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Default identity object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+		<span class="method-name">
+			Identity
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$params</span><span class="var-description">: Parameters to pass to the identity provider.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodIsControl" id="IsControl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method IsControl</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a165">165</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Shortcut for one-line A/B testing.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodIsControl">IsControl</a><span class="src-sym">(</span><span class="src-str">'experimentname'</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;control&nbsp;version</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}&nbsp;</span><span class="src-key">else&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;alternate&nbsp;version</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Whether or not the specified treatment is named &quot;default&quot;</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			IsControl
+		</span>
+					(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$ident</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+				<span class="var-name">$experiment</span><span class="var-description">: Name of the experiment or experiment object.</span>			</li>
+					<li>
+				<span class="var-type">null|<a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+				<span class="var-name">$ident</span><span class="var-description">: Scenario_Identity object, defaults to Identity method if null.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodRenderXml" id="RenderXml"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method RenderXml</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a186">186</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Render the results of an experiment.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;to&nbsp;get&nbsp;results&nbsp;as&nbsp;XML</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$xml&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodRenderXml">RenderXml</a><span class="src-sym">(</span><span class="src-str">'myexperiment'</span><span class="src-sym">,</span><span class="src-str">'xml'</span><span class="src-sym">,</span><span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;to&nbsp;output&nbsp;as&nbsp;HTML</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodRenderXml">RenderXml</a><span class="src-sym">(</span><span class="src-str">'myexperiment'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			RenderXml
+		</span>
+					(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$style</span> = <span class="var-default">'html'</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$capture</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+				<span class="var-name">$experiment</span><span class="var-description">: The experiment to retrieve results from (string or object)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$style</span><span class="var-description">: (Optional) The style parameter to pass to the Scenario_Renderer_Xml object.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$capture</span><span class="var-description">: (Optional) Whether or not to capture output rather than echo it.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodTreatment" id="Treatment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method Treatment</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a93">93</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Static method for getting a treatment for a given experiment.</p>
+<p class="description"><p>Short form usage example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;get&nbsp;a&nbsp;treatment&nbsp;by&nbsp;string,&nbsp;using&nbsp;default&nbsp;ID&nbsp;provider&nbsp;(session),</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;and&nbsp;immediately&nbsp;get&nbsp;the&nbsp;treatment&nbsp;name.</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$treatmentName&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodTreatment">Treatment</a><span class="src-sym">(</span><span class="src-str">'myTest'</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">getName</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  Verbose usage example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$experiment&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../Scenario/Scenario_Core.html#methodgetExperiment">getExperiment</a><span class="src-sym">(</span><span class="src-str">'myTest'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$ident&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Identity_Generator.html">Scenario_Identity_Generator</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Identity_Generator.html#methodsessionIdent">sessionIdent</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$treatment&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodTreatment">Treatment</a><span class="src-sym">(</span><span class="src-var">$experiment</span><span class="src-sym">,</span><span class="src-var">$ident</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$name&nbsp;</span>=&nbsp;<span class="src-var">$treatment</span><span class="src-sym">-&gt;</span><span class="src-id">getName</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Treatment object acquired.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Treatment.html">Scenario_Treatment</a></span>
+		<span class="method-name">
+			Treatment
+		</span>
+					(<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>&nbsp;<span class="var-name">$experiment</span>, [<span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$create</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|<a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+				<span class="var-name">$experiment</span><span class="var-description">: The experiment (or name of the experiment) to get a treatment from.</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+				<span class="var-name">$id</span><span class="var-description">: Identity object to get treatment for. Defaults to Scenario_Identity_Generator::getIdent()</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$create</span><span class="var-description">: (Optional) Whether or not to create the treatment if it does not exist. Defaults to true.</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a241">241</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor. This is usually handled by the singleton pattern, constructing a core  outside of that pattern will cause errors on many calls.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Scenario_Core</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: Configuration options.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconfig" id="config"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">config</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a294">294</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set configuration options.</p>
+<p class="description"><p>Merges the given options array into the configuration data.</p><p>Usage example for Zend adapter:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../Scenario/Scenario_Core.html#methodconfig">config</a><span class="src-sym">(&nbsp;</span><span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;adapter&quot;&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../Scenario/Scenario_Data_Adapter_Zend.html">Scenario_Data_Adapter_Zend</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;db&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;uri&quot;&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;mysqli://user:pass@hostname/schema&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;tables&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;experiments&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;scenario_experiments&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;treatments&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;scenario_treatments&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;users_treatments&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;scenario_users_treatments&quot;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+</ol></div></p><p>Usage example for Pdo adapter:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;define&nbsp;the&nbsp;PDO&nbsp;DSN</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$dsn&nbsp;</span>=&nbsp;<span class="src-str">'mysql:host=localhost;dbname=scenario'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;create&nbsp;the&nbsp;adapter</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-inc">require_once&nbsp;</span><span class="src-str">'Scenario/Data/Adapter/Pdo.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$adapter&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../Scenario/Scenario_Data_Adapter_Pdo.html">Scenario_Data_Adapter_Pdo</a></span><span class="src-sym">(</span><span class="src-var">$dsn</span><span class="src-sym">,&nbsp;</span><span class="src-str">'username'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'pass'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;configure&nbsp;the&nbsp;core</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../Scenario/Scenario_Core.html#methodconfig">config</a><span class="src-sym">(&nbsp;</span><span class="src-key">array</span><span class="src-sym">(&nbsp;</span><span class="src-str">&quot;adapter&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-var">$adapter&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Note:&nbsp;if&nbsp;[db][tables]&nbsp;is&nbsp;omitted,&nbsp;adapter&nbsp;will&nbsp;use&nbsp;default&nbsp;table&nbsp;names.</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+		<span class="method-name">
+			config
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdapter" id="getAdapter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdapter</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a337">337</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the data adapter.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>
+		<span class="method-name">
+			getAdapter
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetExperiment" id="getExperiment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getExperiment</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a375">375</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve an experiment by name.</p>
+<p class="description"><p>Gets an experiement by the specified name, first checking for the existence  of a class in the format [classPrefix].ucfirst(name), and defaulting to  Scenario_Experiment if unable to find a custom class. Custom classes may  be used to alter the behavior of experiments, particularly in regards to  treatment selection.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Experiment.html">Scenario_Experiment</a></span>
+		<span class="method-name">
+			getExperiment
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$experimentname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$experimentname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOption" id="getOption"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOption</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a421">421</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a specific value from the configuration array.</p>
+<p class="description"><p>Retrieves a specific value, sub-arrays delimited by periods.  _config['test']['othertest'] may be referenced by  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-id"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span><span class="src-sym">::</span><a href="../Scenario/Scenario_Core.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../Scenario/Scenario_Core.html#methodgetOption">getOption</a><span class="src-sym">(</span><span class="src-str">'test.othertest'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Value at the given location (or null if it doesn't exist)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getOption
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Period-separated'd path to desired option.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOptions" id="getOptions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOptions</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a405">405</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the entire configuration array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getOptions
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTreatment" id="getTreatment"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTreatment</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a348">348</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves a treatment from an experiment,</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Treatment.html">Scenario_Treatment</a></span>
+		<span class="method-name">
+			getTreatment
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$experiment</span>, <span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$experiment</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdapter" id="setAdapter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdapter</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioCore.php.html#a326">326</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the data adapter.</p>
+<p class="description"><p>Sets the data adapter in use by this instance and links the adapter back to this instance.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Core.html">Scenario_Core</a></span>
+		<span class="method-name">
+			setAdapter
+		</span>
+					(<span class="var-type"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>&nbsp;<span class="var-name">$adapter</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_Data_Adapter.html">Scenario_Data_Adapter</a></span>
+				<span class="var-name">$adapter</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 23 Oct 2010 17:23:33 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

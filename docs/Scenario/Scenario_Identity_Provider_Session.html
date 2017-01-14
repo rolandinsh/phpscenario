@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Scenario_Identity_Provider_Session</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Scenario_Identity_Provider_Session</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Identity provider based on session_id.</p>
+<p class="description"><p>This class serves as the library's default identity provider.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2010 TK Studios. (http://www.tkstudios.com)</li>
+				<li><span class="field">license:</span> <a href="http://www.phpscenario.org/license.php">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Scenario---Identity---Provider---Session.php.html">/Scenario/Identity/Provider/Session.php</a> (line <span class="field"><a href="../__filesource/fsource_Scenario__ScenarioIdentityProviderSession.php.html#a36">36</a></span>)
+		</p>
+		
+				
+		<pre><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a>
+   |
+   --Scenario_Identity_Provider_Session</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												
+												<div class="method-definition">
+											<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+										<a href="#getIdentity" title="details" class="method-name">getIdentity</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodgetIdentity" id="getIdentity"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getIdentity</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentityProviderSession.php.html#a49">49</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an Identity object based on session_id()</p>
+<p class="description"><p>getIdentity() returns a base Scenario_Identity object with the identity  string provided by session_id(). If the session is not yet started,  it will throw an error, as when to start the session should be up to  the developer.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the session_id() based Scenario_Identity object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+		<span class="method-name">
+			getIdentity
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Scenario/Scenario_Identity_Provider.html#methodgetIdentity">Scenario_Identity_Provider::getIdentity()</a></dt>
+						<dd>Returns an Identity object.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Scenario/Scenario_Identity_Provider.html#methodgetIdentity">Scenario_Identity_Provider::getIdentity()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 23 Oct 2010 17:23:39 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

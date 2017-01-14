@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Scenario_Identity</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Scenario_Identity</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Identity object</p>
+<p class="description"><p>Object to be passed to functions requiring an identity for the current case.  Subclasses may return different values for database-safe identities.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2010 TK Studios. (http://www.tkstudios.com)</li>
+				<li><span class="field">license:</span> <a href="http://www.phpscenario.org/license.php">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Scenario---Identity.php.html">/Scenario/Identity.php</a> (line <span class="field"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a33">33</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_identStr" title="details" class="var-name">$_identStr</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+										<a href="#getIdentity" title="details" class="method-name">getIdentity</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span>
+										<a href="#getProvider" title="details" class="method-name">getProvider</a>
+										()
+									</div>
+																																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#setProvider" title="details" class="method-name">setProvider</a>
+											([<span class="var-type"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span>&nbsp;<span class="var-name">$provider</span> = <span class="var-default">null</span>])
+									</div>
+								
+												<div class="method-definition">
+											<span class="method-result">Scenario_Identity</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ident</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDbIdent" title="details" class="method-name">getDbIdent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getIdent" title="details" class="method-name">getIdent</a>
+										()
+									</div>
+																																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setDbIdent" title="details" class="method-name">setDbIdent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setIdent" title="details" class="method-name">setIdent</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_identStr" id="$_identStr"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_identStr</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a88">88</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Identifying string</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodgetIdentity" id="getIdentity"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getIdentity</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a75">75</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an identity object via the current default provider.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Identity generated by the current static identity provider.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Identity.html">Scenario_Identity</a></span>
+		<span class="method-name">
+			getIdentity
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$params</span><span class="var-description">: (Optional) Parameters to pass to the identity provider.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetProvider" id="getProvider"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getProvider</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a64">64</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the currently set default identity provider.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Currently set default identity provider.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span>
+		<span class="method-name">
+			getProvider
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetProvider" id="setProvider"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method setProvider</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a49">49</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the default identity provider to be used when no identity is provided.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setProvider
+		</span>
+					([<span class="var-type"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span>&nbsp;<span class="var-name">$provider</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_Identity_Provider.html">Scenario_Identity_Provider</a></span>
+				<span class="var-name">$provider</span><span class="var-description">: New provider to set.</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a90">90</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Scenario_Identity</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ident</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ident</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDbIdent" id="getDbIdent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDbIdent</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a103">103</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get database-safe version of identity string.</p>
+<p class="description"><p>Fetch an identity string that can be used in data storage as a unique identifier.  Inheriting Scenario_Identity would allow you to, for example, use session_(ID) or  user_(id) depending on the situation.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDbIdent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetIdent" id="getIdent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getIdent</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a127">127</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves the normal identifier object.</p>
+<p class="description"><p>Returns an identifying variable or object. Not necessarily the same as the DB Ident.  In the case of the base Scenario_Identity object, this should be a string.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getIdent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetDbIdent" id="setDbIdent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDbIdent</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a115">115</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the database identifier.</p>
+<p class="description"><p>Alter the unique data storage identifier. Useful if, for example, a user logs in or out.  In the base Scenario_Identity class, this is equivalent to setIdent($str)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDbIdent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: New identifier string.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetIdent" id="setIdent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setIdent</span> (line <span class="line-number"><a href="../__filesource/fsource_Scenario__ScenarioIdentity.php.html#a139">139</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the normal identifier object.</p>
+<p class="description"><p>Set the identifying var/object. Not necessarily the same as the DB Ident.  In the case of the base Scenario_Identity object, this should be a string.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setIdent
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$id</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 23 Oct 2010 17:23:35 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

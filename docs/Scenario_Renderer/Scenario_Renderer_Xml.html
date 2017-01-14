@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Scenario_Renderer_Xml</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Scenario_Renderer_Xml</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XML / XSLT resultset renderer.</p>
+<p class="description"><p>Renderer class that outputs in either raw XML or translates it using either  a supplied or built in XSL file. Currently supported XSL parameters: 'html'.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2010 TK Studios. (http://www.tkstudios.com)</li>
+				<li><span class="field">license:</span> <a href="http://www.phpscenario.org/license.php">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Scenario---Renderer---Xml.php.html">/Scenario/Renderer/Xml.php</a> (line <span class="field">37</span>)
+		</p>
+		
+				
+		<pre><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html">Scenario_Renderer_Abstract</a>
+   |
+   --Scenario_Renderer_Xml</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-vars">Vars</a>
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#AS_HTML" title="details" class="const-name">AS_HTML</a> = 					<span class="var-type"> 'html'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#AS_XML" title="details" class="const-name">AS_XML</a> = 					<span class="var-type"> 'xml'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																												
+												<div class="method-definition">
+											<span class="method-result">Scenario_Renderer_Xml</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$stylesheet</span> = <span class="var-default">self::AS_XML</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getTranslator" title="details" class="method-name">getTranslator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">DOMDocument</span>
+										<a href="#getXslt" title="details" class="method-name">getXslt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#renderSet" title="details" class="method-name">renderSet</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$results</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$capture</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">DOMDocument</span>
+										<a href="#resultsAsXml" title="details" class="method-name">resultsAsXml</a>
+											(<span class="var-type"><a href="../Scenario/Scenario_Result.html">Scenario_Result</a>|<a href="../Scenario/Scenario_ResultSet.html">Scenario_ResultSet</a></span>&nbsp;<span class="var-name">$resultSet</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTranslator" title="details" class="method-name">setTranslator</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$translator</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#translate" title="details" class="method-name">translate</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$xml</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$xslt</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html">Scenario_Renderer_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#var$_params">Scenario_Renderer_Abstract::$_params</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">46</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Scenario_Renderer_Xml</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$stylesheet</span> = <span class="var-default">self::AS_XML</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$stylesheet</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#method__construct">Scenario_Renderer_Abstract::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodgetTranslator" id="getTranslator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTranslator</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the current translator (DOMDocument or string)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getTranslator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetXslt" id="getXslt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getXslt</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an XSL file from Xslt subdir.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">DOMDocument</span>
+		<span class="method-name">
+			getXslt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the XSL file to load. Should be a filename within Scenario/Renderer/Xslt/</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrenderSet" id="renderSet"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">renderSet</span> (line <span class="line-number">91</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Render a Scenario_ResultSet</p>
+<p class="description"><p>Renders a result set in XML. To render multiple experiments, merge the  collections, or render them individually.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The rendered result document as a string.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			renderSet
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$results</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$capture</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_ResultSet.html">Scenario_ResultSet</a></span>
+				<span class="var-name">$results</span><span class="var-description">: The resultset to render.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$capture</span><span class="var-description">: (optional) Whether to capture the results rather than render them to output.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodrenderSet">Scenario_Renderer_Abstract::renderSet()</a></dt>
+						<dd>renderSet</dd>
+					</dl>
+			
+	</div>
+<a name="methodresultsAsXml" id="resultsAsXml"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">resultsAsXml</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Translates a result or resultset into an XML DOMDocument.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">DOMDocument</span>
+		<span class="method-name">
+			resultsAsXml
+		</span>
+					(<span class="var-type"><a href="../Scenario/Scenario_Result.html">Scenario_Result</a>|<a href="../Scenario/Scenario_ResultSet.html">Scenario_ResultSet</a></span>&nbsp;<span class="var-name">$resultSet</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Scenario/Scenario_Result.html">Scenario_Result</a>|<a href="../Scenario/Scenario_ResultSet.html">Scenario_ResultSet</a></span>
+				<span class="var-name">$resultSet</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTranslator" id="setTranslator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTranslator</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the xslt parameter</p>
+<p class="description"><p>Alias for setParam('xslt',$translator). If the translator is an instance  of DOMDocument it will be used in the XML translation by itself.  If $translator starts with a slash, it will be interpreted as a path.  Otherwise, the file is assumed to reside within the Scenario/Reporter/Xslt/  folder, as {$translator}.xsl</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTranslator
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$translator</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$name</span><span class="var-description">: Can be set to either a string or a DOMDocument (XSL)</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$translator</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtranslate" id="translate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">translate</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Translates the provided xml and xsl DOMDocuments to string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Output of the translation.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			translate
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$xml</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$xslt</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">DOMDocument</span>
+				<span class="var-name">$xml</span><span class="var-description">: XML to use in the translation.</span>			</li>
+					<li>
+				<span class="var-type">DOMDocument</span>
+				<span class="var-name">$xslt</span><span class="var-description">: XSL Stylesheet to apply to the XML.</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html">Scenario_Renderer_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#method__construct">Scenario_Renderer_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodclearParam">Scenario_Renderer_Abstract::clearParam()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodgetParam">Scenario_Renderer_Abstract::getParam()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodgetParams">Scenario_Renderer_Abstract::getParams()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodrenderSet">Scenario_Renderer_Abstract::renderSet()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodsetParam">Scenario_Renderer_Abstract::setParam()</a></span><br>
+													<span class="method-name"><a href="../Scenario_Renderer/Scenario_Renderer_Abstract.html#methodsetParams">Scenario_Renderer_Abstract::setParams()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-vars">Vars</a>
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constAS_HTML" id="AS_HTML"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">AS_HTML</span>
+			 = <span class="const-default"> 'html'</span>
+			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constAS_XML" id="AS_XML"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">AS_XML</span>
+			 = <span class="const-default"> 'xml'</span>
+			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 17 Oct 2010 15:37:42 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
